@@ -20,7 +20,7 @@ class HelloWorld extends HTMLElement {
   
   // attribute change
   attributeChangedCallback(property, oldValue, newValue) {
-    if(attribute == 'name' && oldValue !== newValue){
+    if(property == 'name' && oldValue !== newValue){
       this.name = newValue
     }
   }
