@@ -22,6 +22,7 @@ class HelloWorld extends HTMLElement {
   attributeChangedCallback(property, oldValue, newValue) {
     if(property == 'name' && oldValue !== newValue){
       this.name = newValue
+      this.textContent = `Hello ${this.getAttribute("name")}!`;
     }
   }
   
