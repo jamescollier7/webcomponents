@@ -5,7 +5,7 @@ class HelloWorld extends HTMLElement {
   // then do other initializations
   constructor() {
     super();
-    this.name = 'World';
+    this.textContent = `Hello ${this.getAttribute("name")}!`;
   }
   
   // connect component
